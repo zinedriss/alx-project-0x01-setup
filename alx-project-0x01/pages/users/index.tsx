@@ -1,12 +1,16 @@
+import Header from '@/components/layout/Header';
 import React from 'react';
 
-const UsersIndex: React.FC = () => {
+const UsersPage: React.FC = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold">Users Page</h1>
-      <p>This is the index page for users.</p>
+    <div>
+      <Header />
+      <main className="container mx-auto p-4">
+        <h1 className="text-2xl font-bold">Users Page</h1>
+        <p>Welcome to the users page. User information will be displayed here.</p>
+      </main>
     </div>
   );
 };
 
-export default UsersIndex;
+export default UsersPage;

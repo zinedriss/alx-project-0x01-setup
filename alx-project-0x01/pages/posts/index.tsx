@@ -1,12 +1,16 @@
+import Header from '@/components/layout/Header';
 import React from 'react';
 
-const PostsIndex: React.FC = () => {
+const PostsPage: React.FC = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold">Posts Page</h1>
-      <p>This is the index page for posts.</p>
+    <div>
+      <Header />
+      <main className="container mx-auto p-4">
+        <h1 className="text-2xl font-bold">Posts Page</h1>
+        <p>Welcome to the posts page. Content for posts will be displayed here.</p>
+      </main>
     </div>
   );
 };
 
-export default PostsIndex;
+export default PostsPage;
